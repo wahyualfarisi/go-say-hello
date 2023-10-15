@@ -1,7 +1,13 @@
 package gosayhello
 
-import "fmt"
+func SayHello(name string) string {
+	return "Hello " + name
+}
 
-func SayHello() {
-	fmt.Println("Hello")
+func CalculateSum(data []int) (results int) {
+	for _, v := range data {
+		results += v
+	}
+
+	return
 }
